@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./resources/css/about.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+  <title>CopperState CPR</title>
+</head>
+<body>
+  <div id="topnav">
+    <a href="index.html">Home</a>
+    <a href="index.html#servicenav">Services</a>
+    <a href="faqs.html">FAQ's</a>
+    <a class="active" href="schedule.html">Schedule Now</a>
+  </div>
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("topnav").style.top = "0";
+    } else {
+      document.getElementById("topnav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+  <!--Yellow Color scheme #FED700 -->
+  <!--Red Color scheme #BF0A30 -->
+  <!--Blue Color scheme rgb(43, 69, 122) -->
+  <h1 id="welcomeHeader">CopperState CPR</h1>
+  <div class="rowsched" id="rowsched">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+
+          <div class="rowsched">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+
+              <div class="rowsched">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+              <div class="rowsched">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart
+          <span class="price" style="color:black">
+            <i class="fa fa-shopping-cart"></i>
+            <b>4</b>
+          </span>
+        </h4>
+        <p><a href="services.html">CPR Adult, Child and Infant</a> <span class="price">$45</span></p>
+        <p><a href="services.html">CPR Adult, Child and Infant with First AID</a> <span class="price">$90</span></p>
+        <p><a href="services.html">First AID</a> <span class="price">$45</span></p>
+        <p><a href="services.html">BLS Provider Course</a> <span class="price">$75</span></p>
+        <hr>
+        <p>Total <span class="price" style="color:black"><b>$255</b></span></p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footcontact">
+      <h4>Contact Information</h4>
+      <ul>
+        <li>480.262.1335</li>
+        <li>marshalleske45@gmail.com</li>
+      </ul>
+    </div>
+    <div class="footsite">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#servicenav">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faqs.html">FAQ's</a></li>
+        <li><a href="schedule.html">Schedule Now</a></li>
+      </ul>
+    </div>
+    <div class="email">
+      <h1>Send me a message!</h1>
+      <form method="post" action="submissionform.php" id="footersubmit">
+      <textarea name="message"></textarea>
+      <input type="submit">
+      </form>
+    </div>
+  </footer>
+</body>
+</html>

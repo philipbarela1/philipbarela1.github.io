@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+  <title>CopperState CPR</title>
+</head>
+<body>
+  <div id="topnav">
+    <a href="index.html">Home</a>
+    <a href="index.html#servicenav">Services</a>
+    <a class="active" href="faqs.html">FAQ's</a>
+    <a href="schedule.html">Schedule Now</a>
+  </div>
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("topnav").style.top = "0";
+    } else {
+      document.getElementById("topnav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+  <h1 id="welcomeHeader">CopperState CPR</h1>
+  <div class="faqs">
+    <h1 id="faqList"><em>Frequently Asked Questions</em></h1>
+  </div>
+  <div class="flipcardcontainer">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Are you AHA Instructor Certified?</p>
+        </div>
+        <div class="flip-card-back">
+          <h2> Yes, I am up to date with all current curriculum and certifications</h2>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>When will I get my cert?</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>Within 72 hours of course completion</h2>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Do I have to pay extra for the certification on top of the course cost?</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>No. All charges are included within the course cost</h2>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>What is the Basic Life Support (BLS) Course?</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>Basic Life Support is the certification health care workers require</h2>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Will you come to me?</p>
+        </div>
+        <div class="flip-card-back">
+          <h2>For groups of 6 or more I will drive to you. I also offer group discounts.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footcontact">
+      <h4>Contact Information</h4>
+      <ul>
+        <li>480.262.1335</li>
+        <li>marshalleske45@gmail.com</li>
+      </ul>
+    </div>
+    <div class="footsite">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#servicenav">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faqs.html">FAQ's</a></li>
+        <li><a href="schedule.html">Schedule Now</a></li>
+      </ul>
+    </div>
+    <div class="email">
+      <h1>Send me a message!</h1>
+      <form method="post" action="submissionform.php" id="footersubmit">
+      <textarea name="message"></textarea>
+      <input type="submit">
+      </form>
+    </div>
+  </footer>
+</body>
+</html>

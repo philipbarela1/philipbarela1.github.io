@@ -1,0 +1,299 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: 'Playfair Display', serif;
+  background-size: cover;
+}
+
+.BANNER{
+  width: 100%;
+  background-color: #E7544D;
+  text-align: center;
+  margin-top: 0;
+  padding:0;
+  line-height: 1.5;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  color: #282C35;
+  margin-bottom: 0;
+}
+.BANNER h3{
+  padding: 0;
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+#lowerBanner{
+  background-color: #FDFD98;
+}
+* {
+  box-sizing: border-box;
+}
+#slideshowimg{
+  height: 12.5rem;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3.125rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 0 0.188rem 0.188rem 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0.188rem 0 0 0.188rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 0.125rem 1rem;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* Add a black background color to the top navigation */
+#topnav {
+  background-color: #5E85B2;
+  overflow: hidden;
+  margin-top: 0;
+  position: sticky;
+  z-index:2;
+  top:0;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+/* Style the links inside the navigation bar */
+#topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+#topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+#topnav a.active {
+  background-color: rgb(213, 185, 7);
+  color: white;
+
+}
+#rowsched{
+  margin-bottom: 3.125rem;
+}
+.rowsched{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 1rem;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 0.313rem 1.25rem 0.938rem 1.25rem;
+  border: 0.063rem solid lightgrey;
+  border-radius: 0.188rem;
+}
+
+#aboutsubmit {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.188rem;
+}
+
+label {
+  margin-bottom: 0.625rem;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 1.25rem;
+  padding: 0.438rem 0;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem;
+  margin: 0.625rem 0;
+  border: none;
+  width: 100%;
+  border-radius: 0.188rem;
+  cursor: pointer;
+  font-size: 1.063rem;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+.marsh{
+  border: 0.188rem solid coral;
+  background-color: #E7544D;
+  width: 27.5rem;
+  line-height: 1.5;
+  color: white;
+  width: 100%;
+  margin: 2rem 0;
+}
+.marsh h3{
+  font-size: 2rem;
+}
+.marsh p{
+  font-size: 1rem;
+}
+footer {
+  bottom: 0;
+  max-width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 9.375rem;
+  justify-content: center;
+  flex-shrink: 3;
+
+}
+textarea{
+  resize: none;
+  padding-left: 6.25rem;
+}
+.email{
+  padding-left: 0.75rem;
+  float: right;
+}
+.email h1{
+  text-align: center;
+  font-size: 4.23841059602649vh;
+}
+#footcontact{
+}
+#msg{
+  resize: none;
+  padding-left: 6.25rem;
+  max-width: 20%;
+}
+.footsite a{
+  color: white;
+}
+#welcomeHeader{
+  font-size: 50px;
+  margin-top: 0px;
+  text-align: center;
+  background-color: #002868;
+  color: white;
+  padding: 12px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .rowsched {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

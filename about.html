@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./resources/css/about.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+  <title>CopperState CPR</title>
+</head>
+<body>
+  <div class="BANNER">
+    <h3>CopperState CPR</h3>
+  </div>
+  <div class="BANNER" id="lowerBanner">
+    <h3>marshalleske45@gmail.com</h3>
+    <h3>480-262-1335</h3>
+  </div>
+  <div id="topnav">
+    <a href="index.html">Home</a>
+    <a href="index.html#servicenav">Services</a>
+    <a class="active" href="about.html">About</a>
+    <a href="faqs.html">FAQ's</a>
+    <a href="schedule.html">Schedule Now</a>
+  </div>
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("topnav").style.top = "0";
+    } else {
+      document.getElementById("topnav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+  <!--Yellow Color scheme #FED700 -->
+  <!--Red Color scheme #BF0A30 -->
+  <!--Blue Color scheme #ce5c17 -->
+  <div class="marsh">
+    <h3>A little bit about me</h3>
+    <p>My name is Marshall Eske and I am a 21 year old paramedic. I have been through vigorous coursework both in the classroom and the field. The opportunity to spread my passion of helping others was presented to me and I seized it. I began CopperState CPR as a way to assist in others' ability to save lives. </p>
+  </div>
+  <div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src=" resources/images/img_5terre_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img id="slideshowimg" src="img_5terre_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <style>
+      /* Style inputs with type="text", select elements and textareas */
+      input[type=text], select, #subject {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+
+      /* Style the submit button with a specific background color etc */
+      #textbox {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* When moving the mouse over the submit button, add a darker green color */
+      #textbox:hover {
+        background-color: #45a049;
+      }
+
+      /* Add a background color and some padding around the form */
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      #subject{
+
+      }
+    </style>
+  </div>
+  <div class="container">
+    <h2>Ask me a question, schedule an appointment, or anything else you may need. Fill out the form below and I will get back to you as soon as possible.</h2>
+    <form action="action_page.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">City</label>
+      <select id="city" name="city">
+        <option value="phoenix">Phoenix</option>
+        <option value="gilbert">Gilbert</option>
+        <option value="queen_creek">Queen Creek</option>
+        <option value="chandler">Chander</option>
+        <option value="peoria">Peoria</option>
+        <option value="florence">Florence</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:12.5rem"></textarea>
+
+      <input type="submit" value="Submit" id="textbox">
+
+    </form>
+  </div>
+  <footer>
+    <div class="footcontact">
+      <h4>Contact Information</h4>
+      <ul>
+        <li>Address</li>
+        <li>480.262.1335</li>
+        <li>marshalleske45@gmail.com</li>
+      </ul>
+    </div>
+    <div class="footsite">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#servicenav">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faqs.html">FAQ's</a></li>
+        <li><a href="schedule.html">Schedule Now</a></li>
+      </ul>
+    </div>
+    <div class="email">
+      <h1>Send me a message!</h1>
+      <form method="post" action="submissionform.php" id="footersubmit">
+      <textarea name="message" id="msg"></textarea>
+      <input type="submit">
+      </form>
+    </div>
+  </footer>
+</body>
+</html>

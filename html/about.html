@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./resources/css/about.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+  <title>CopperState CPR</title>
+</head>
+<body>
+  <div id="BANNER">
+    <h3>CopperState CPR</h3>
+  </div>
+  <div id="topnav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Ser4vices</a>
+    <a class="active" href="about.html">About</a>
+    <a href="html/faqs.html">FAQ's</a>
+    <a href="html/schedule.html">Schedule Now</a>
+  </div>
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("topnav").style.top = "0";
+    } else {
+      document.getElementById("topnav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+  <!--Yellow Color scheme #FED700 -->
+  <!--Red Color scheme #BF0A30 -->
+  <!--Blue Color scheme rgb(43, 69, 122) -->
+  <div class="marsh">
+    <h3>A little bit abut me</h3>
+  </div>
+  <div class="ServiceDiv">
+    <h3>BLS Provider Course Skills Session $40</h3>
+    <p>Less than 1 hour</p>
+    <p>Please contact me for a link to the online portion. Skills must be completed in person after completing the online portion to get you certification</p>
+  </div>
+</body>
+</html>
