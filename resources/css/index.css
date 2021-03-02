@@ -6,87 +6,8 @@ body, html {
   background-repeat: no-repeat;
 
 }
-.CONTENT {
-  display: flex;
-  position: relative;
-}
-.WELCOME {
-  align-items: center;
-  display: flex;
-  position: relative;
-  margin-top: 0px;
-  flex-shrink: 3;
-  background-color: #002868;
-  justify-content: center;
-}
-
-.GRAPHIC{
-  background-color: white;
-}
-#IMG{
-  mix-blend-mode: multiply;
-  max-width: 100%;
-}
-.INFO {
-  font-size: 2.340702210663199vh;
-  background-color: #ca241c;
-  color: white;
-  text-align: center;
-  height: 30rem;
-  width: 40rem;
-  overflow: scroll;
-  justify-content: center;
-  max-width: 100%;
-  flex-shrink: 2;
-
-}
-.INFO h3{
-  padding-top: 70px;
-}
-.INFO p {
-  padding-top: 170px;
-  font-family: 'Montserrat', sans-serif;
-  flex-shrink: 3;
-}
-.SERVICES {
-  margin: 5.313rem;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  position: relative;
-  flex-shrink: 2;
-}
-.ServiceDiv{
-  flex-basis: 18.75rem;
-  background-color: white;
-  text-align: center;
-  width: 100%;
-  border: 0.313rem outset #5E85B2;
-  border-radius: 1.375rem;
-  margin: 0.625rem;
-  flex-shrink: 3;
-  color: 	#333333;
-
-}
-
-.ServiceDiv p{
-  font-family: 'Montserrat', sans-serif;
-}
-.WelcomeDiv{
-  margin-bottom: 10.938rem;
-}
-.divIMG{
-  height: 2.5rem;
-  padding: 0 0.313rem;
-  mix-blend-mode: multiply;
-}
-.divIMGlarge{
-  border-radius: 0.938rem 0.938rem 0 0;
-}
-#certifiedfirstaid{
-  width: 3.125rem;
-  height: 3.125rem;
-  mix-blend-mode: multiply;
+a{
+  color: inherit;
 }
 /* Add a black background color to the top navigation */
 #topnav {
@@ -124,24 +45,151 @@ body, html {
   color: white;
 
 }
+#welcomeHeader{
+  font-size: 50px;
+  margin-top: 0px;
+  text-align: center;
+  background-color: #002868;
+  color: white;
+  padding: 12px;
+}
+#courselist{
+  padding-top: 1rem;
+  margin-left: 10.625rem;
+  font-size: 2.8rem;
+  text-decoration: underline;
+}
+#courseLogo{
+  display: flex;
+}
+.logoImg{
+  margin: 0 auto;
+  margin-left: 371px;
+  margin-bottom: 0;
+  max-height: 309px;
+  max-width: 450px;
+}
+.SERVICES {
+  margin: 5.313rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+  flex-shrink: 2;
+}
+.ServiceDiv{
+  flex-basis: 18.75rem;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  border: 0.313rem outset #5E85B2;
+  border-radius: 1.375rem;
+  margin: 0.625rem;
+  flex-shrink: 3;
+  color: 	#333333;
+
+}
+
+.ServiceDiv p{
+  font-family: 'Montserrat', sans-serif;
+}
+.divIMG{
+  height: 2.5rem;
+  padding: 0 0.313rem;
+  mix-blend-mode: multiply;
+}
+.button a:hover{
+  text-decoration: underline;
+  color: black;
+}
+.servicebtn{
+  background-color: #4CAF50;
+  color: white;
+  margin: 0.625rem 0;
+  border: none;
+  width: 75%;
+  border-radius: 0.188rem;
+  cursor: pointer;
+  font-size: 1.063rem;
+}
+.servicebtn a{
+  text-decoration: none;
+  color: white;
+}
+#certifiedfirstaid{
+  width: 3.125rem;
+  height: 3.125rem;
+  mix-blend-mode: multiply;
+}
+.WELCOME {
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin-top: 0px;
+  flex-shrink: 3;
+  justify-content: center;
+}
+.WelcomeDiv{
+  margin-bottom: 5rem;
+}
+
+.INFO {
+  font-size: 2.340702210663199vh;
+  background-color: #ca241c;
+  color: white;
+  text-align: center;
+  height: 20rem;
+  width: 40rem;
+  overflow: scroll;
+  justify-content: center;
+  max-width: 100%;
+  flex-shrink: 2;
+  border-radius: 5px 50px 30px 15px;
+}
+.INFO p {
+  margin: 5rem auto 0 auto;
+}
+.stats {
+  background-color: #5E85B2;
+  font-size: 1.25rem;
+  width: 76.313rem;
+  max-width: 100%;
+  color: black;
+  margin: 1.563rem auto;
+  padding: 0.25rem;
+  box-sizing: border-box;
+  background-color: #E4E4D9;
+  background-image: linear-gradient( 45deg, rgba(0,0,0,0) 95%, #E7554D 95%),
+                    linear-gradient( 45deg, rgba(0,0,0,0) 92%, #5E85B2 92%),
+                    linear-gradient( 45deg, rgba(0,0,0,0) 89%, #FDFD98 89%),
+                    linear-gradient( 45deg, rgba(0,0,0,0) 86%, #EB7770 86%),
+                    linear-gradient( 45deg, rgba(0,0,0,0) 83%, #8EA9C9 83%),
+                    linear-gradient( 45deg, rgba(0,0,0,0) 80%, #FDFDB6 80%);
+}
+
+.stats h2{
+  text-align: center;
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 20.313rem;
   height: 9.375rem;
-  border: 0.313rem double #FDFD98;
+  border: 0.313rem double #E4C200;
   perspective: 62.5rem; /* Remove this if you don't want the 3D effect */
-
+  flex-basis: 25%;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 9.375rem;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 1.3s;
   transform-style: preserve-3d;
+
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -152,10 +200,11 @@ body, html {
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100%;;
+  height: 9.375rem;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -172,48 +221,24 @@ body, html {
   transform: rotateY(180deg);
 }
 .flipcardcontainer{
-
   display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 18.75rem;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 10.75rem;
 }
 .faqs{
   font-size: 1.125rem;
-  position: relative;
-  margin-bottom: 6.25rem;
-}
-.faqs img{
-  width: 100%;
-  height: 25rem;
-  filter: brightness(75%);
+  display: flex;
 }
 .faqs h1{
-  position: absolute;
-  color: black;
-  padding-left: 0.75rem;
-  z-index: 1;
+  padding-top: 1rem;
+  margin-left: 10.625rem;
+  font-size: 2.8rem;
+  text-decoration: underline;
 }
-.stats {
-  background-color: #5E85B2;
-  font-size: 1.25rem;
-  width: 76.313rem;
-  max-width: 100%;
-  color: black;
+.faqs img{
   margin: 0 auto;
-  padding: 0.25rem;
-  margin-bottom: 1.563rem;
-  box-sizing: border-box;
-  background-color: #E4E4D9;
-  background-image: linear-gradient( 45deg, rgba(0,0,0,0) 95%, #E7554D 95%),
-                    linear-gradient( 45deg, rgba(0,0,0,0) 92%, #5E85B2 92%),
-                    linear-gradient( 45deg, rgba(0,0,0,0) 89%, #FDFD98 89%),
-                    linear-gradient( 45deg, rgba(0,0,0,0) 86%, #EB7770 86%),
-                    linear-gradient( 45deg, rgba(0,0,0,0) 83%, #8EA9C9 83%),
-                    linear-gradient( 45deg, rgba(0,0,0,0) 80%, #FDFDB6 80%);
-}
-
-.stats h2{
-  text-align: center;
 }
 
 footer {
@@ -253,42 +278,7 @@ textarea{
 .footsite a{
   color: white;
 }
-#courselist{
-  padding-top: 1rem;
-  margin-left: 10.625rem;
-  font-size: 2.8rem;
-  text-decoration: underline;
-}
-.servicebtn{
-  background-color: #4CAF50;
-  color: white;
-  margin: 0.625rem 0;
-  border: none;
-  width: 75%;
-  border-radius: 0.188rem;
-  cursor: pointer;
-  font-size: 1.063rem;
-}
-.servicebtn a{
-  text-decoration: none;
-  color: white;
-}
-.button a:hover{
-  text-decoration: underline;
-  color: black;
-}
-#welcomeHeader{
-  font-size: 50px;
-  margin-top: 0px;
-  text-align: center;
-  background-color: #002868;
-  color: white;
-  padding: 12px;
-}
-#faqList{
-  color: #ca241c;
-  margin-bottom: 244px;
-}
+
 @media (max-width: 414px) {
   .INFO{
     font-size: 0.75rem;
