@@ -296,6 +296,9 @@ textarea{
     padding: 0;
     height: 14rem;
   }
+  #logoImg{
+    flex-shrink: 2;
+  }
 
 
 }
