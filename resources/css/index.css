@@ -281,7 +281,10 @@ textarea{
 
 @media (max-width: 414px) {
   .INFO{
-    font-size: 0.75rem;
+    flex-shrink: 2;
+  }
+  #logoImg{
+    flex-shrink: 4;
   }
 }
 @media (max-width: 800px) {
@@ -297,7 +300,7 @@ textarea{
     height: 14rem;
   }
   #logoImg{
-    flex-shrink: 2;
+    flex-shrink: 4;
   }
 
 
