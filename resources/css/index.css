@@ -316,7 +316,7 @@ textarea{
     align-items: center;
   }
   .logoImg{
-    margin-left: 0;
+    margin-left: 13rem;
   }
   #courselist{
     margin-left: 0;
@@ -326,6 +326,9 @@ textarea{
   }
   .mobile2{
     visibility: visible;
+  }
+  footer{
+    display: none;
   }
 }
 @media (max-width: 800px) {
@@ -346,7 +349,7 @@ textarea{
     align-items: center;
   }
   .logoImg{
-    margin-left: 0;
+    margin-left: 13rem;
   }
   #courselist{
     margin-left: 0;
