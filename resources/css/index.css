@@ -46,12 +46,12 @@ a{
 
 }
 #welcomeHeader{
-  font-size: 50px;
+  font-size: 3.125rem;
   margin-top: 0px;
   text-align: center;
   background-color: #002868;
   color: white;
-  padding: 12px;
+  padding: 0.75rem;
 }
 #courselist{
   padding-top: 1rem;
@@ -64,10 +64,10 @@ a{
 }
 .logoImg{
   margin: 0 auto;
-  margin-left: 371px;
+  margin-left: 23.188rem;
   margin-bottom: 0;
-  max-height: 309px;
-  max-width: 450px;
+  max-height: 19.313rem;
+  max-width: 28.125rem;
 }
 .SERVICES {
   margin: 5.313rem;
@@ -145,7 +145,7 @@ a{
   justify-content: center;
   max-width: 100%;
   flex-shrink: 2;
-  border-radius: 5px 50px 30px 15px;
+  border-radius: 0.313rem 3.125rem 1.875rem 0.938rem;
 }
 .INFO p {
   margin: 5rem auto 0 auto;
