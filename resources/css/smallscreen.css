@@ -1,0 +1,34 @@
+  .INFO{
+    font-size: 0.75rem;
+  }
+  .flipcardcontainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .WELCOME{
+    flex-direction: column;
+  }
+  .INFO{
+    padding: 0;
+    height: 14rem;
+  }
+  #courseLogo{
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoImg{
+    margin-left: 13rem;
+  }
+  #courselist{
+    margin-left: 0;
+  }
+  .mobile1{
+    visibility: visible;
+  }
+  .mobile2{
+    visibility: visible;
+  }
+  footer{
+    display: none;
+  }
