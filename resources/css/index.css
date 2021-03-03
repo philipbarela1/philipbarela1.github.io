@@ -46,29 +46,12 @@ a{
 
 }
 #welcomeHeader{
-  font-size: 2.5rem;
+  font-size: 3.125rem;
   margin-top: 0px;
   text-align: center;
   background-color: #002868;
   color: white;
   padding: 0.75rem;
-  align-items: center;
-  justify-content: center;
-
-}
-#welcomeHeader h1{
-}
-.mobile1{
-  position: absolute;
-  font-size: 25px;
-  left: 0;
-  visibility: hidden;
-}
-.mobile2{
-  position: absolute;
-  font-size: 25px;
-  right: 0;
-  visibility: hidden;
 }
 #courselist{
   padding-top: 1rem;
@@ -317,20 +300,13 @@ textarea{
     align-items: center;
   }
   .logoImg{
-    margin-left: 13rem;
+    margin-left: 0;
   }
   #courselist{
     margin-left: 0;
   }
-  .mobile1{
-    visibility: visible;
-  }
-  .mobile2{
-    visibility: visible;
-  }
   footer{
     display: none;
-    visibility: hidden;
   }
 }
 @media (max-width: 800px) {
@@ -351,7 +327,7 @@ textarea{
     align-items: center;
   }
   .logoImg{
-    margin-left: 13rem;
+    margin-left: 0;
   }
   #courselist{
     margin-left: 0;
@@ -361,7 +337,6 @@ textarea{
   }
   footer{
     display: none;
-    visibility: hidden;
   }
 
 
