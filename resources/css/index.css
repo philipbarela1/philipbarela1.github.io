@@ -300,7 +300,8 @@ textarea{
     align-items: center;
   }
   .logoImg{
-    margin-left: 2rem;
+    margin-left: 0;
+    margin: 0 auto;
   }
   #courselist{
     margin-left: 0;
@@ -328,6 +329,7 @@ textarea{
   }
   .logoImg{
     margin-left: 0;
+    margin: 0 auto;
   }
   #courselist{
     margin-left: 0;
