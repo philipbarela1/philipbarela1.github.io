@@ -329,6 +329,9 @@ textarea{
   #courselist{
     margin-left: 0;
   }
+  footer{
+    display: none;
+  }
 
 
 }
