@@ -52,6 +52,22 @@ a{
   background-color: #002868;
   color: white;
   padding: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+#welcomeHeader h1{
+}
+.mobile1{
+  position: absolute;
+  font-size: 25px;
+  left: 0;
+  visibility: hidden;
+}
+.mobile2{
+  position: absolute;
+  font-size: 25px;
+  right: 0;
+  visibility: hidden;
 }
 #courselist{
   padding-top: 1rem;
@@ -300,13 +316,16 @@ textarea{
     align-items: center;
   }
   .logoImg{
-    margin-left: 13rem;
+    margin-left: 0;
   }
   #courselist{
     margin-left: 0;
   }
-  footer{
-    display:none;
+  .mobile1{
+    visibility: visible;
+  }
+  .mobile2{
+    visibility: visible;
   }
 }
 @media (max-width: 800px) {
@@ -327,13 +346,16 @@ textarea{
     align-items: center;
   }
   .logoImg{
-    margin-left: 13rem;
+    margin-left: 0;
   }
   #courselist{
     margin-left: 0;
   }
+  .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+  }
   footer{
-    display: none;
+    display:none;
   }
 
 
