@@ -59,13 +59,12 @@ a{
   font-size: 2.8rem;
   text-decoration: underline;
 }
-#courseLogo{
-  display: flex;
-}
+
 .logoImg{
-  margin: 0 auto;
-  margin-left: 23.188rem;
-  margin-bottom: 0;
+  display: block;
+  margin-left: 30rem;
+  margin-right: auto;
+  width: 50%;
   max-height: 19.313rem;
   max-width: 28.125rem;
 }
@@ -301,10 +300,9 @@ textarea{
   }
   .logoImg{
     margin-left: 0;
-    margin: 0 auto;
   }
   #courselist{
-    margin-left: 3rem;
+    margin-left: 0;
   }
   footer{
     display: none;
@@ -328,7 +326,7 @@ textarea{
     align-items: center;
   }
   .logoImg{
-    margin-left: 3rem;
+    margin-left: 0;
   }
   #courselist{
     margin-left: 0;
