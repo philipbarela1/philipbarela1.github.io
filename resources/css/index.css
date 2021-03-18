@@ -94,6 +94,7 @@ a{
   font-family: 'Montserrat', sans-serif;
 }
 .divIMG{
+  margin-top: 0.75rem;
   height: 2.5rem;
   padding: 0 0.313rem;
   mix-blend-mode: multiply;
@@ -117,6 +118,7 @@ a{
   color: white;
 }
 #certifiedfirstaid{
+  margin-top: 0.75rem;
   width: 3.125rem;
   height: 3.125rem;
   mix-blend-mode: multiply;
