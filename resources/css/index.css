@@ -290,8 +290,9 @@ textarea{
   }
   .INFO{
     padding: 0;
-    height: 15rem;
+    height: 18rem;
     font-size: 2rem;
+    width: 43rem;
   }
   #courseLogo{
     display: block;
