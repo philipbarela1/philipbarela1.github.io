@@ -310,6 +310,9 @@ textarea{
   footer{
     display: none;
   }
+  .ServiceDiv{
+    flex-basis: 28rem;
+  }
 }
 @media (max-width: 800px) {
   .flipcardcontainer{
