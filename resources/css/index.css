@@ -302,7 +302,7 @@ textarea{
   .logoImg{
     margin-left: 0;
     height: 16rem;
-    width: 20rem;
+    width: 25rem;
   }
   #courselist{
     margin-left: 0;
@@ -312,7 +312,7 @@ textarea{
   }
   .ServiceDiv{
     flex-basis: 32rem;
-    height: 45rem;
+    height: 52rem;
   }
   .ServiceDiv h3{
     font-size: 2.5rem;
