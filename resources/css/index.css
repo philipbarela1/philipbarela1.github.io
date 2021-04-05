@@ -310,7 +310,8 @@ textarea{
   }
   .ServiceDiv{
     flex-basis: 28rem;
-    height: 30rem;
+    height: 45rem;
+    font-size 1.65rem;
   }
 }
 @media (max-width: 800px) {
