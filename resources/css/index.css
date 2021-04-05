@@ -295,7 +295,7 @@ textarea{
   }
   #courseLogo{
     display: block;
-    margin-left: 18rem;
+    margin-left: 16rem;
     margin-right: auto;
     width: 50%;
   }
@@ -325,7 +325,10 @@ textarea{
     font-size: 1.5rem;
   }
   #topnav a{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+  }
+  .welcomeHeader{
+    font-size: 4rem;
   }
 }
 @media (max-width: 800px) {
