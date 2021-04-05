@@ -295,14 +295,14 @@ textarea{
   }
   #courseLogo{
     display: block;
-    margin-left: 22rem;
+    margin-left: 18rem;
     margin-right: auto;
     width: 50%;
   }
   .logoImg{
     margin-left: 0;
     height: 16rem;
-    width: 25rem;
+    width: 30rem;
   }
   #courselist{
     margin-left: 0;
@@ -322,6 +322,9 @@ textarea{
   }
   .servicebtn{
     height: 2rem;
+    font-size: 1.5rem;
+  }
+  #topnav a{
     font-size: 1.5rem;
   }
 }
