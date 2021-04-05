@@ -281,9 +281,6 @@ textarea{
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px)  {
-  .INFO{
-    font-size: 1.25rem;
-  }
   .flipcardcontainer{
     flex-direction: column;
     align-items: center;
@@ -293,7 +290,8 @@ textarea{
   }
   .INFO{
     padding: 0;
-    height: 14rem;
+    height: 15rem;
+    font-size: 1.25rem;
   }
   #courseLogo{
     display: block;
@@ -312,7 +310,7 @@ textarea{
   }
   .ServiceDiv{
     flex-basis: 28rem;
-    height: 100%;
+    height: 30rem;
   }
 }
 @media (max-width: 800px) {
