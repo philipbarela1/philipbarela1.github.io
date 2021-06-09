@@ -288,7 +288,7 @@ textarea{
   }
   .INFO{
     padding: 0;
-    height: 18rem;
+    height: 30rem;
     font-size: 2rem;
     width: 43rem;
   }
@@ -340,7 +340,7 @@ textarea{
   }
   .INFO{
     padding: 0;
-    height: 14rem;
+    height: 30rem;
   }
   #courseLogo{
     display: block;
