@@ -142,11 +142,9 @@ a{
   text-align: center;
   height: 20rem;
   width: 40rem;
-  overflow: scroll;
   justify-content: center;
   max-width: 100%;
   flex-shrink: 2;
-  border-radius: 0.313rem 3.125rem 1.875rem 0.938rem;
 }
 .INFO p {
   margin: 5rem auto 0 auto;
